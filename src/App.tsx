@@ -1,5 +1,5 @@
 import React from 'react';
-import UserTable from './components/UserTable/UserTable';
+import UserTable from './components/UserManagement/UserManagement';
 
 const App: React.FC = () => {
   return (
