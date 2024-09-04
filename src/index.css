@@ -2,18 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'animate.css';
-@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import "animate.css";
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
 
 body {
   margin: 0;
   font-family: "SUSE", sans-serif;
-  background-color: #F8F9FB;
+  background-color: #f8f9fb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

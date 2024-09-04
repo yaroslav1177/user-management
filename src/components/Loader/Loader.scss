@@ -1,66 +1,67 @@
-$grey: rgba(0, 0, 0, .5);
-$blue: rgba(0, 0, 255, .5);
+$grey: rgba(0, 0, 0, 0.5);
+$blue: rgba(0, 0, 255, 0.5);
 
 @keyframes rotate {
-	0% {
-		transform: rotate(0deg);
-	}
-	50% {
-		transform: rotate(180deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes rotate2 {
-	0% {
-		transform: rotate(0deg);
-		border-top-color: $grey;
-	}
-	50% {
-		transform: rotate(180deg);
-		border-top-color: $blue;
-	}
-	100% {
-		transform: rotate(360deg);
-		border-top-color: $grey;
-	}
+  0% {
+    transform: rotate(0deg);
+    border-top-color: $grey;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top-color: $blue;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top-color: $grey;
+  }
 }
 
 @mixin loaderDivMixin {
-	border-radius: 50%;
-	padding: 8px;
-	border: 2px solid transparent;
-	animation: rotate linear 2.5s infinite;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid transparent;
+  animation: rotate linear 2.5s infinite;
 }
 
 .container-loader {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   height: 100vh;
 }
 
 .loader {
-	position: relative;
-	margin: 0 auto;
-	width: 150px;
-	height: 150px;
-	display: block;
-	overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  display: block;
+  overflow: hidden;
 
-	div {
-		height: 100%;
-		width: 100%;
-		padding: 0;
-		box-sizing: border-box;
-	}
+  div {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
 
-.loader2, .loader2 div {
-	@include loaderDivMixin;
-	border-top-color: $grey;
-	border-left-color: $grey;
-	border-right-color: $grey;
+.loader2,
+.loader2 div {
+  @include loaderDivMixin;
+  border-top-color: $grey;
+  border-left-color: $grey;
+  border-right-color: $grey;
 }
